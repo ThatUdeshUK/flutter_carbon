@@ -1,7 +1,13 @@
 library flutter_carbon;
 
-/// A Calculator.
-class Calculator {
-  /// Returns [value] plus 1.
-  int addOne(int value) => value + 1;
+import 'package:flutter/widgets.dart';
+
+/// Buttons
+class Button extends StatelessWidget {
+
+  @override
+  Widget build(BuildContext context) {
+    return Container();
+  }
+  
 }
