@@ -11,7 +11,16 @@ class MyApp extends StatelessWidget {
       theme: ThemeData(
         primarySwatch: Colors.blue,
       ),
-      home: Container(),
+      home: Scaffold(
+        appBar: AppBar(title: Text("Flutter Carbon Gallary")),
+        body: Column(
+          children: <Widget>[
+            Button(onPressed: () {
+              print("Button pressed");
+            }, text: "Button")
+          ],
+        ),
+      ),
     );
   }
 }
