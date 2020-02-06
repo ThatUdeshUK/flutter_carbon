@@ -7,7 +7,7 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      title: 'Flutter Demo',
+      title: 'Flutter Carbon Gallery',
       theme: ThemeData(
         primarySwatch: Colors.blue,
       ),
@@ -15,9 +15,13 @@ class MyApp extends StatelessWidget {
         appBar: AppBar(title: Text("Flutter Carbon Gallary")),
         body: Column(
           children: <Widget>[
-            Button(onPressed: () {
-              print("Button pressed");
-            }, text: "Button")
+            Button(
+              onPressed: () {
+                print("Button pressed");
+              },
+              text: "Button",
+              size: ButtonSize.FullBleed,
+            )
           ],
         ),
       ),
